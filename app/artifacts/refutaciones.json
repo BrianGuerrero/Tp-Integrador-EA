@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Tratamiento placebo",
+    "efecto_original_pp": -0.18373441110772168,
+    "nuevo_efecto_pp": 0.0005573188274170359,
+    "criterio": "el efecto medio con T permutado no debe diferir de 0 (test z, p = 0.99 > 0,05)",
+    "aprobado": true
+  },
+  {
+    "nombre": "Causa común aleatoria",
+    "efecto_original_pp": -0.18373441110772168,
+    "nuevo_efecto_pp": -0.1836629887761063,
+    "criterio": "el efecto no debe cambiar (|Δ| < 10% del ancho del IC original)",
+    "aprobado": true
+  },
+  {
+    "nombre": "Submuestra 80%",
+    "efecto_original_pp": -0.18373441110772168,
+    "nuevo_efecto_pp": -0.16418693975661497,
+    "criterio": "el efecto medio debe quedar dentro del IC 95% original",
+    "aprobado": true
+  }
+]

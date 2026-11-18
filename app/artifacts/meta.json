@@ -1,0 +1,146 @@
+{
+  "creado": "2026-11-16T00:54:15",
+  "n": 69970,
+  "tasa_base": 0.08970987566099757,
+  "pred_num": [
+    "edad",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_diagnoses",
+    "log_number_outpatient",
+    "log_number_emergency",
+    "log_number_inpatient"
+  ],
+  "pred_bin": [
+    "hba1c_medida",
+    "cambio_med",
+    "diabetesMed",
+    "insulina"
+  ],
+  "pred_cat": [
+    "sexo",
+    "raza",
+    "tipo_admision",
+    "origen_admision",
+    "especialidad",
+    "cobertura",
+    "diag_principal"
+  ],
+  "pca_vars": [
+    "edad",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_diagnoses",
+    "log_number_outpatient",
+    "log_number_emergency",
+    "log_number_inpatient"
+  ],
+  "referencia": {
+    "edad": 65.0,
+    "time_in_hospital": 3.0,
+    "num_lab_procedures": 44.0,
+    "num_procedures": 1.0,
+    "num_medications": 14.0,
+    "number_diagnoses": 8.0,
+    "log_number_outpatient": 0.0,
+    "log_number_emergency": 0.0,
+    "log_number_inpatient": 0.0,
+    "hba1c_medida": 0.0,
+    "cambio_med": 0.0,
+    "diabetesMed": 1.0,
+    "insulina": 1.0,
+    "sexo": "Mujer",
+    "raza": "Caucasian",
+    "tipo_admision": "Emergencia",
+    "origen_admision": "Guardia",
+    "especialidad": "Desconocido",
+    "cobertura": "Desconocido",
+    "diag_principal": "Circulatorio"
+  },
+  "opciones": {
+    "sexo": [
+      "Hombre",
+      "Mujer"
+    ],
+    "raza": [
+      "AfricanAmerican",
+      "Asian",
+      "Caucasian",
+      "Desconocido",
+      "Hispanic",
+      "Other"
+    ],
+    "tipo_admision": [
+      "Desconocido",
+      "Electiva",
+      "Emergencia",
+      "Otra",
+      "Urgencia"
+    ],
+    "origen_admision": [
+      "Derivacion",
+      "Desconocido",
+      "Guardia",
+      "Otro",
+      "Traslado"
+    ],
+    "especialidad": [
+      "Cardiologia",
+      "Cirugia",
+      "ClinicaMedica",
+      "Desconocido",
+      "Emergencias",
+      "MedicinaGeneral",
+      "Otra"
+    ],
+    "cobertura": [
+      "Desconocido",
+      "Medicaid",
+      "Medicare",
+      "Particular",
+      "Privada"
+    ],
+    "diag_principal": [
+      "Circulatorio",
+      "Diabetes",
+      "Digestivo",
+      "Genitourinario",
+      "Lesiones",
+      "Musculoesqueletico",
+      "Neoplasias",
+      "Otro",
+      "Respiratorio"
+    ]
+  },
+  "pca_var_explicada": [
+    0.23108111502792003,
+    0.14539878132508244,
+    0.1258614702863565,
+    0.11279151605075889,
+    0.09643251274665907,
+    0.09146057661320768,
+    0.07654373750513135,
+    0.06969881821387465,
+    0.05073147223100941
+  ],
+  "pred_metrics": {
+    "AUC-ROC": 0.6186566396319111,
+    "PR-AUC": 0.14249531833772122,
+    "Brier": 0.08034888022007612,
+    "LogLoss": 0.29447292088943855,
+    "Precision": 0.13683634373289547,
+    "Recall": 0.398406374501992,
+    "F1": 0.20370747606437156,
+    "F1-macro": 0.517166359896218,
+    "F1-ponderado": 0.7744024483573388,
+    "umbral": 0.10486210557786008,
+    "AUC IC95% inf": 0.6036412838324072,
+    "AUC IC95% sup": 0.6352410829247574,
+    "ECE": 0.009494653179231642
+  },
+  "fuente_causal": "DML con cross-fitting (réplica de EconML LinearDML)"
+}

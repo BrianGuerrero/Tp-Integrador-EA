@@ -1,0 +1,22 @@
+# Entorno verificado: Python 3.13
+# Núcleo (versiones con las que se ejecutó y testeó el proyecto)
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+networkx==3.7
+joblib==1.6.0
+# Inferencia causal (Fase 4)
+econml==0.17.0
+dowhy>=0.12
+# Datos (descarga alternativa desde UCI)
+ucimlrepo>=0.0.7
+# App
+streamlit>=1.35
+# Calidad (Quality Gate)
+pytest==9.1.1
+ruff==0.16.9
+# Notebook
+jupyter
