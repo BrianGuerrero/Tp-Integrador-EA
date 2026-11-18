@@ -1,0 +1,15 @@
+name: Quality Gate
+on: [pull_request, push]
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install numpy==2.5.3 pandas==3.0.5 scipy==1.18.1 scikit-learn==1.9.1 matplotlib==3.11.2 networkx==3.7 joblib==1.6.0 pytest==9.1.1 ruff==0.16.9
+      - name: Lint (PEP8 / ruff)
+        run: ruff check src tests app scripts
+      - name: Tests (pytest)
+        run: pytest -q
