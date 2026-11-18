@@ -1,14 +1,14 @@
 # BITÁCORA DE INGENIERÍA — TP Integrador EAyMR 2026
 
 > Cuaderno de laboratorio y registro de decisiones. No es un resumen del notebook ni un historial de commits.
-> Cada entrada está firmada por el rol responsable. **Completar los nombres** antes de la entrega.
+> Cada entrada está firmada por el rol responsable.
 
 | Rol | Integrante |
 |---|---|
-| 👑 Project Lead & Scrum Master (PL) | _completar_ |
-| ⚙️ Backend & ML / Causal Engineer (BE) | _completar_ |
-| 🎨 Frontend & UI/UX Engineer (FE) | _completar_ |
-| 🔍 QA & Validation Engineer (QA) | _completar_ |
+| 👑 Project Lead & Scrum Master (PL) | Brian Guerrero |
+| ⚙️ Backend & ML / Causal Engineer (BE) | Matias Fox |
+| 🎨 Frontend & UI/UX Engineer (FE) | Brian Guerrero |
+| 🔍 QA & Validation Engineer (QA) | Joseba Esain |
 
 ---
 
@@ -154,7 +154,7 @@ El diseño identifica el efecto **bajo** el supuesto de no confusión residual. 
 Toda fórmula implementada a mano se testea contra una referencia independiente: MCO vs `sklearn`, HC3 vs fórmula matricial explícita, Cook y residuo externo vs *leave-one-out*, Welch ANOVA vs `scipy.stats.f_oneway(equal_var=False)`, z² vs χ², potencia en el MDE = 0,80, IPW con efecto conocido en datos sintéticos (`pytest -q`: 52 tests).
 
 ### Limitaciones del entorno de la IA
-La IA no pudo ejecutar DoWhy ni EconML (sin instalación posible en su entorno). Esas celdas fueron escritas siguiendo la API documentada y contrastadas con implementaciones propias equivalentes. **El equipo debe ejecutar el notebook completo (Restart & Run All) y verificar que DoWhy/EconML coincidan con las referencias** antes de entregar. **Resultado (18/11/2026, Google Colab): ✅** DoWhy `linear_regression` = −0,18 pp (idéntico a la referencia); DoWhy IPW = −0,23 pp (referencia Hájek −0,22); EconML LinearDML = −0,26 pp, IC95% [−0,85; 0,32] (réplica propia −0,15); CausalForestDML = −0,21 pp, IC95% [−2,95; 2,52]. Todos incluyen el 0: la conclusión no cambia. — _firma: completar_
+La IA no pudo ejecutar DoWhy ni EconML (sin instalación posible en su entorno). Esas celdas fueron escritas siguiendo la API documentada y contrastadas con implementaciones propias equivalentes. **El equipo debe ejecutar el notebook completo (Restart & Run All) y verificar que DoWhy/EconML coincidan con las referencias** antes de entregar. **Resultado (18/11/2026, Google Colab): ✅** DoWhy `linear_regression` = −0,18 pp (idéntico a la referencia); DoWhy IPW = −0,23 pp (referencia Hájek −0,22); EconML LinearDML = −0,26 pp, IC95% [−0,85; 0,32] (réplica propia −0,15); CausalForestDML = −0,21 pp, IC95% [−2,95; 2,52]. Todos incluyen el 0: la conclusión no cambia. — firma: Joseba Esain (QA)
 
 ### Responsabilidad
 Las decisiones metodológicas (DAG, conjunto de ajuste, interpretación) fueron revisadas por el equipo, que puede defender cada una en el oral. _Agregar aquí los prompts propios y los errores que el equipo encuentre._

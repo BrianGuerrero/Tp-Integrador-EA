@@ -8,17 +8,17 @@
 
 **TP Integrador — Estadística Aplicada y Modelos de Regresión (EAyMR 2026), UCA.**
 
-🔗 **App desplegada:** _completar con la URL de Streamlit Community Cloud_
-🔗 **Repositorio:** _completar con la URL de GitHub_
+🔗 **App desplegada:** https://tp-integrador-ea.streamlit.app/
+🔗 **Repositorio:** https://github.com/BrianGuerrero/Tp-Integrador-EA
 
 ## Equipo y roles Scrum
 
 | Rol | Integrante | Responsable de |
 |---|---|---|
-| 👑 Project Lead & Scrum Master | _completar_ | arquitectura, issues/milestones, merge a `main` sólo con `[APROBADO]` de QA |
-| ⚙️ Backend & ML / Causal Engineer | _completar_ | `src/tpi/` (stats, models, causal), notebook, serialización |
-| 🎨 Frontend & UI/UX Engineer | _completar_ | `app/app.py`, visualizaciones, deploy |
-| 🔍 QA & Validation Engineer | _completar_ | `tests/`, `ruff`, CI (`.github/workflows`), veredicto de PRs |
+| 👑 Project Lead & Scrum Master | Brian Guerrero | arquitectura, issues/milestones, merge a `main` sólo con `[APROBADO]` de QA |
+| ⚙️ Backend & ML / Causal Engineer | Matias Fox | `src/tpi/` (stats, models, causal), notebook, serialización |
+| 🎨 Frontend & UI/UX Engineer | Brian Guerrero | `app/app.py`, visualizaciones, deploy |
+| 🔍 QA & Validation Engineer | Joseba Esain | `tests/`, `ruff`, CI (`.github/workflows`), veredicto de PRs |
 
 ## Problema y preguntas
 
@@ -75,7 +75,7 @@ T ──► C (nº de análisis) ◄── U (gravedad, no observada) ──► 
 ## Reproducción paso a paso
 
 ```bash
-git clone <url-del-repo> && cd <repo>
+git clone https://github.com/BrianGuerrero/Tp-Integrador-EA.git && cd Tp-Integrador-EA
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
