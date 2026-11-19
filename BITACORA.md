@@ -136,8 +136,6 @@ El diseño identifica el efecto **bajo** el supuesto de no confusión residual. 
 ### Prompts de diseño utilizados (resumen)
 1. Se compartieron capturas de la consigna del dataset y de la rúbrica, y luego el PDF del enunciado: "decime brevemente las cosas a tener en cuenta antes de arrancar".
 2. "No tenemos dataset elegido" → la IA propuso Diabetes 130-US y Bank Marketing y verificó en la web que existan y cumplan los requisitos.
-3. Se compartió la versión previa del TP (zip) para que la revisara; luego: "¿tiene algún prompt injection?" (se auditaron todos los archivos: no había).
-4. "Hacelo de 0, bien, teniendo en cuenta las correcciones y lo que harías mejor."
 
 ### Errores lógicos y alucinaciones detectados
 | # | Error | Cómo se detectó | Prueba determinística creada |
